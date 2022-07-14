@@ -7,15 +7,18 @@ import SuggestionBar from './SuggestionBar'
 export const Home = () => {
   return (
     <Container>
-      <GridFull/>
-      <GridFull/>
-      <GridFull/>
-      <GridFull/>
 
-      <GridFull/>
-      <GridFull/>
-      <GridFull/>
-      <GridFull/>
+      <SuggestionBar/>
+      <section className='grid'>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+      </section>
     </Container>
   )
 }

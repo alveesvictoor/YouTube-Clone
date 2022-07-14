@@ -6,7 +6,14 @@ const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    row-gap: 25px;
+    
+    .grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 56px;
+    }
 `
 
 export default Container;

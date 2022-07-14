@@ -1,11 +1,13 @@
 import React from 'react'
 import { Button } from '@mui/material'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 import Container from './style'
 
 const SuggestionBar = () => {
   return (
     <Container>
+      <ScrollContainer className='scroll-bar'>
         <Button className='button'>All</Button>
         <Button className='button'>Music</Button>
         <Button className='button'>Mixes</Button>
@@ -23,6 +25,7 @@ const SuggestionBar = () => {
         <Button className='button'>Mixes</Button>
         <Button className='button'>Gaming</Button>
         <Button className='button'>Lo-fi</Button>
+      </ScrollContainer>
     </Container>
     )
 }

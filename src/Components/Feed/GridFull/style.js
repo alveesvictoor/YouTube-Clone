@@ -6,6 +6,8 @@ const Container = styled.div`
     max-width: 25%;
     padding: 6px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 24px;
+ 
 .thumbnail{
     width: 100%;
     height: fit-content;

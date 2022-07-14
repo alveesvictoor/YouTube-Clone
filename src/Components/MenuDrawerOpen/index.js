@@ -1,9 +1,10 @@
 import React from 'react'
 import Container from './style';
+import { Link } from "react-router-dom";
+
 //Components
 import { Button } from '@mui/material';
 //icon
-import MenuIcon from '@mui/icons-material/Menu';
 
 import HomeIcon from '@mui/icons-material/Home';
 import ExploreOutlinedIcon from '@mui/icons-material/ExploreOutlined';
@@ -14,49 +15,112 @@ import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import FileDownloadOutlinedIcon from '@mui/icons-material/FileDownloadOutlined';
 
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 export const MenuDrawerOpen = () => {
   return (
     <Container>
-            <Button  className='Menu'  onClick={() => {
-    alert('clicked');
-  }}>
-    <MenuIcon/>
-    </Button>
-        <Button sx={{color:'black', display: 'flex', flexDirection: 'column', fontSize:8, margin:1}} variant="text">
-            <HomeIcon sx={{ fontSize: 24}}/>
+    <div className='section'>
+
+    <Link to="/">
+        <Button className='button' variant="text">
+            <HomeIcon className='ico' />
              Home
         </Button>
-       
-        <Button sx={{color:'black', display: 'flex', flexDirection: 'column', fontSize:8, margin:1}} variant="text">
-            <ExploreOutlinedIcon sx={{ fontSize: 24}}/>
+    </Link>
+    <Link to="/">
+
+        <Button className='button' variant="text">
+            <ExploreOutlinedIcon  className='ico'/>
             Explore
         </Button>
-        
-        <Button sx={{color:'black', display: 'flex', flexDirection: 'column', fontSize:8, margin:1}} variant="text">
-            <SubscriptionsOutlinedIcon sx={{ fontSize: 24}}/>
+        </Link>
+
+    <Link to="/">
+        <Button className='button' variant="text">
+            <SubscriptionsOutlinedIcon className='ico'/>
+            Shorts
+        </Button>
+        </Link>
+
+    <Link to="/">   
+        <Button className='button' variant="text">
+            <SubscriptionsOutlinedIcon className='ico'/>
             Subscriptions
         </Button>
-        
-        <Button sx={{color:'black', display: 'flex', flexDirection: 'column', fontSize:8, margin:1}} variant="text">
-            <YouTubeIcon sx={{ fontSize: 24}}/>
+        </Link>
+
+    <Link to="/">    
+        <Button className='button' variant="text">
+            <YouTubeIcon className='ico'/>
             Originals
         </Button>
-        
-        <Button sx={{color:'black', display: 'flex', flexDirection: 'column', fontSize:8, margin:1}} variant="text">
-            <PlayCircleIcon sx={{ fontSize: 24}}/>
+        </Link>
+
+    <Link to="/">    
+        <Button className='button' variant="text">
+            <PlayCircleIcon className='ico'/>
             YouTube Music
         </Button>
-        
-        <Button sx={{color:'black', display: 'flex', flexDirection: 'column', fontSize:8, margin:1}} variant="text">
-            <LibraryMusicIcon sx={{ fontSize: 24}}/>
+        </Link>
+   
+    <Link to="/">
+        <div className='divider'></div>
+        <Button className='button' variant="text">
+            <LibraryMusicIcon className='ico'/>
             Library
         </Button>
-        
-        <Button sx={{color:'black', display: 'flex', flexDirection: 'column', fontSize:8, margin:1}} variant="text">
-            <FileDownloadOutlinedIcon sx={{ fontSize: 24}}/>
-            Downloads
-        
+    </Link>
+
+    <Link to="/">    
+        <Button className='button' variant="text">
+            <LibraryMusicIcon className='ico'/>
+            History
         </Button>
+        </Link>
+    
+    <Link to="/">
+        <Button className='button' variant="text">
+            <LibraryMusicIcon className='ico'/>
+            Your videos
+        </Button>
+        </Link> 
+    
+    <Link to="/">
+        <Button className='button' variant="text">
+            <LibraryMusicIcon className='ico'/>
+            Your movies
+        </Button>
+        </Link>
+    
+    <Link to="/">
+        <Button className='button' variant="text">
+            <LibraryMusicIcon className='ico'/>
+            Watch later
+        </Button>
+        </Link>
+    
+    <Link to="/">       
+        <Button className='button' variant="text">
+            <FileDownloadOutlinedIcon className='ico'/>
+            Downloads
+        </Button>
+        </Link> 
+    
+    <Link to="/">
+        <Button className='button' variant="text">
+            <ExpandMoreIcon className='ico'/>
+            Show more
+        </Button>
+        </Link>
+    
+        </div>
+    
+    
+        <div className='subscriptions-section'>
+            <h2>Subscriptions</h2>
+
+        </div>
     </Container>
   )
 }
