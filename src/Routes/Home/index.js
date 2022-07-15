@@ -19,6 +19,16 @@ export const Home = () => {
           <GridFull/>
           <GridFull/>
       </section>
+      <section className='grid'>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+          <GridFull/>
+      </section>
     </Container>
   )
 }

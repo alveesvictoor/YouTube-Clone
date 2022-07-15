@@ -9,6 +9,10 @@ const Container = styled.nav`
   align-items: center;
   grid-column: 1/3;
   grid-row: 1;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+
   .logo{
     height: 2.7vh;
 }

@@ -5,7 +5,10 @@ const Container = styled.div`
     grid-column: 2;
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    width: calc(100% - 72px);
+    margin-left: 72px;
+    justify-content: flex-end;
+    background-color: #f9f9f9;
     
     .grid{
         display: flex;
@@ -13,6 +16,7 @@ const Container = styled.div`
         flex-wrap: wrap;
         width: 100%;
         margin-top: 56px;
+        padding: 20px;
     }
 `
 

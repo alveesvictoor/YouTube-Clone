@@ -3,10 +3,18 @@ import { Button } from '@mui/material'
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 import Container from './style'
+//Icon
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 const SuggestionBar = () => {
   return (
     <Container>
+     
+      
+        <ChevronLeftIcon className='arrow left'/>
+    
+      
       <ScrollContainer className='scroll-bar'>
         <Button className='button'>All</Button>
         <Button className='button'>Music</Button>
@@ -26,6 +34,9 @@ const SuggestionBar = () => {
         <Button className='button'>Gaming</Button>
         <Button className='button'>Lo-fi</Button>
       </ScrollContainer>
+
+      <ChevronRightIcon className='arrow right'/>
+      
     </Container>
     )
 }

@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const Container = styled.nav`
+z-index: 100;
+  position: fixed;
+  width: calc(100% - 72px);
+  display: flex;
+    align-items: center;
    .scroll-bar{ height: 56px;
     width:100%;
     border-bottom: 1.5px solid #f0f0f0;
@@ -13,7 +18,6 @@ const Container = styled.nav`
     padding: 0 12px 0 12px;
     overflow-x: scroll;
     overflow-y: hidden;
-    position: fixed;
     background-color: #fff;
 }
 
@@ -31,6 +35,34 @@ const Container = styled.nav`
         white-space: nowrap;
         
 }
+.arrow{
+    position: absolute;
+} 
+.left{
+    left:0;
+    z-index: 10;
+    background-color: #ffff;
+    height: 56px;
+    width: 50px;
+    padding: 15px;
+}
+.left::after{
+    content: "oie";
+    background-color: black;
+    color: black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.right{
+    z-index: 10;
+    background-color: #ffff;
+    height: 56px;
+    width: 50px;
+    padding: 15px;
+    right: 0;
+}
+
 `
 
 export default Container;
